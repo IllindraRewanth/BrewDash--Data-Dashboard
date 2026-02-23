@@ -1,0 +1,393 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Data visualization styles */
+.data-insights {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.insights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.toggle-button {
+  background-color: #f0c14b;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.charts-container {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.chart-explanation {
+  margin-bottom: 20px;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart {
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(55, 48, 90, 0.7);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Detail view styles */
+.detail-view {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.detail-header {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #f0c14b;
+  text-decoration: none;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-card,
+.map-card {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-label {
+  width: 120px;
+  font-weight: bold;
+  color: #f0c14b;
+}
+
+.website-link {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.website-link:hover {
+  text-decoration: underline;
+}
+
+.brewery-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.brewery-link:hover {
+  color: #f0c14b;
+}
+
+.details-button {
+  display: inline-block;
+  background-color: rgba(240, 193, 75, 0.7);
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.details-button:hover {
+  background-color: #f0c14b;
+}
+
+.loading,
+.error,
+.not-found {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  padding: 10px;
+  color: #fff;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  background-image: url('https://craftpeak-cooler-images.imgix.net/ever-grain-brewing-company/EVER-9.jpg?auto=compress%2Cformat&ixlib=php-3.3.1&s=7aec6d98d4aaa33a97f8531286bff5cc');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Dashboard Styles */
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filter-section {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.filter-control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-control.full-width {
+  width: 100%;
+}
+
+.search-input, .select-input, .range-input {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider {
+  flex: 1;
+}
+
+.range-input {
+  width: 80px;
+}
+
+.breweries-table {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  font-weight: bold;
+  color: #f0c14b;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: rgba(26, 20, 49, 0.9);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: rgba(240, 193, 75, 0.2);
+}
+
+.nav-item.active {
+  background-color: rgba(240, 193, 75, 0.3);
+  border-left: 3px solid #f0c14b;
+}
+
+.nav-icon {
+  font-size: 18px;
+}
+
+/* Search Page Styles */
+.search-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-form {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-button {
+  background-color: #f0c14b;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* About Page Styles */
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content {
+  background-color: rgba(43, 36, 77, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about-content h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f0c14b;
+}
+
+.about-content ul {
+  margin-left: 20px;
+}
+
+.about-content li {
+  margin-bottom: 5px;
+}
