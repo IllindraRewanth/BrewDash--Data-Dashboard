@@ -1,6 +1,6 @@
 # Web Development Project 6 - BrewDash
 
-Submitted by: **Hotragn Pettugani**
+Submitted by: **Illindra Revanth**
 
 This web app: **BrewDash is a comprehensive brewery dashboard that allows users to explore and discover breweries across the United States. It fetches data from the Open Brewery DB API and provides an interactive, visually appealing dashboard with dynamic filters, search functionality, individual detail views, and visual insights via charts.**
 
